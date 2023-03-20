@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+  max-width: 100%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.App{
+  min-height: 100vh;
+  width: 85vw;
+  max-width: 1900px;
+  margin: 0rem auto;
+}
+
+body{
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: antiquewhite;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+}
+
+.navbar-menu-container{
+  display: none;
+
+
+}
+
+.navbar-links-container a{
+  margin-right: 3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.primary-button{
+  padding: 0.9rem 1.75rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.navbar-cart-icon{
+  font-size: 1.15rem;
+}
+
+.primary-button:hover{
+  background-color: azure;
+}
+
+.navbar-menu-container svg{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width:1000px) {
+  .navbar-links-container a{
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .primary-button{
+    font-size: 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 800px){
+  .nav-logo-container{
+    max-width: 140px;
+  }
+  .navbar-links-container{
+    display: none;
+  }
+  .navbar-menu-container{
+    display: flex;
+  }
+}
+
+.home-banner-container{
+  display: flex;
+  padding-top: 30px;
+}
+
+.home-text-section{
+  padding-top: 175px;
+}
+
+.primary-text{
+  padding-bottom: 15px;
+}
+
+.secondary-button{
+  color: aqua;
+  background-color: black;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+
+@media (max-width: 800px){
+  .home-banner-container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-image-section{
+    width: 80%;
+    padding-top: 30px;
+
+  }
+
+}
+
+.footer-wrapper{
+  border-top: 1px solid white;
+  margin-top: 30px;
+  padding-top: 15px;
+  height: 300px;
+  display: flex;
+}
+
+.footer-icons{
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.footer-icons:hover{
+  padding-top: 10px;
+  cursor: pointer;
+  color: rgb(233, 191, 20);
+}
+
+.footer-section-two{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-section-columns{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 190px;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-section-columns span{
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer-section-columns span:hover{
+  padding: 5px;
+  color: blue;
+  cursor: pointer;
+}
+
+@media (max-width:800px){
+  .footer-wrapper{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .footer-section-two{
+    flex-direction: column;
+  }
+  .footer-section-columns{
+    margin: 1rem 0rem;
   }
 }
