@@ -51,11 +51,11 @@ const Navbar = () => {
             <img src={Logo} alt='' />
         </div>
         <div className='navbar-links-container'>
-            <a href=''>Home</a>
-            <a href=''>About</a>
-            <a href=''>Testimonials</a>
-            <a href=''>Contact</a>
-            <a href=''>
+            <a href='https://github.com/ankushprajapati'>Home</a>
+            <a href='https://github.com/ankushprajapati'>About</a>
+            <a href='https://github.com/ankushprajapati'>Testimonials</a>
+            <a href='https://github.com/ankushprajapati'>Contact</a>
+            <a href='https://github.com/ankushprajapati'>
                 <BsCart2 className='navbar-cart-icon'/>
             </a>
             <button className='primary-button'>Booking Now</button>
